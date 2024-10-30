@@ -78,14 +78,20 @@ body {
 }
 
 #playAgain {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
+    display: none; /* Keeps it hidden until needed */
     background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    animation: flash 1s infinite;
+}
+
 }
 
 footer {
