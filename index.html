@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="connect4.css">
+    <script src="connect4.js"></script>
+</head>
+<body>
+    <h1>Connect 4</h1>
+    <div id="turnDisplay">Red's turn</div>
+    <h2 id="winner"></h2>
+    <div id="board"></div>
+    <div id="popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Congrats, you've won!</h2>
+        </div>
+    </div>
+    <button id="playAgain" onclick="resetGame()" style="display:none;">Play Again</button>
+    <audio id="pieceSound" src="/Users/williamchan/Desktop/P2204954-William Chan-Assignment1/resources/audio/placePiece.mp3" preload="auto"></audio>
+    <audio id="popupSound" src="/Users/williamchan/Desktop/P2204954-William Chan-Assignment1/resources/audio/Win.mp3" preload="auto"></audio>
+    <footer style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">P2204954</footer>
+</body>
+</html>
